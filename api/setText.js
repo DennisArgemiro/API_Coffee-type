@@ -8,9 +8,7 @@ module.exports = (req, res)=>{
     
     const path = getRandomText();
     const data = fs.readFileSync(path, 'utf-8')
-    
-    const obj = JSON.parse('{"text":"'+data+'"}')
-    
+        
     res.json({
         text: data,
     })
