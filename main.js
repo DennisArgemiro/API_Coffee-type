@@ -4,7 +4,6 @@ const setTextController =require("./api/setText")
 const app = Express()
 const port  =  process.env.PORT | 3000
 
-app.use("/", homeController)
 app.use("/", setTextController)
 
 app.listen(port, ()=>{
