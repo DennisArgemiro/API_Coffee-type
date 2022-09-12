@@ -1,13 +1,13 @@
 {
     "version": 2,
     "builds":[{
-        "src":"/sendText",
+        "src":"./main.js",
         "use": "@vercel/node"
     }],
     "routes":[
         {
-            "src": "/sendText",
-            "dest": "/"
+        "src": "api/sendText",
+        "dest": "/"
         }
     ]
 }

@@ -1,6 +1,5 @@
 const Express = require("express")
-const homeController = require("./controllers/home")
-const setTextController =require("./controllers/setText")
+const setTextController =require("./api/setText")
 
 const app = Express()
 const port  =  process.env.PORT | 3000
