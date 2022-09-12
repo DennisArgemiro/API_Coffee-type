@@ -1,5 +1,9 @@
 {
     "version": 2,
+    "builds":{
+        "src":"/sendText",
+        "use": "@vercel/node"
+    },
     "routes":[
         {
             "src": "/sendText",
