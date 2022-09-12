@@ -14,7 +14,7 @@ const data = fs.readFileSync(path, 'utf-8')
 
 const obj = JSON.parse('{"text":"'+data+'"}')
 
-res.send(obj)
+res.end(obj)
     
 }) 
 module.exports = router
